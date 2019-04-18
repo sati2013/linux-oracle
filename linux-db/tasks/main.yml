@@ -44,7 +44,7 @@
 #  copy: src=disable_trans_hugepages.sh dest='~/disable_trans_hugepages.sh' mode=755
 #- name: Disable Transparent Huge Pages
 #  shell: '~/disable_trans_hugepages.sh'
-
+- copy: src=huge_pages.sh dest='/var/tmp/huge_pages.sh' mode=755
 - name: configure kernel for hugepages
   sysctl: name="vm.nr_hugepages" value="{{ hugepages_nr }}" state=present
   tags:
