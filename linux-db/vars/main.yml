@@ -1,5 +1,7 @@
 packages_list:
+  - binutils
   - compat-libcap1
+  - compat-libstdc++-33
   - gcc
   - gcc-c++
   - glibc
@@ -7,6 +9,7 @@ packages_list:
   - glibc-devel
   - glibc-devel.i686
   - ksh
+  - libgcc
   - libaio.i686
   - libaio-devel
   - libaio-devel.i686
@@ -14,14 +17,32 @@ packages_list:
   - libstdc++.i686
   - libstdc++-devel
   - libstdc++-devel.i686
+  - libXext
+  - libXtst
+  - libxcb
   - libXi
   - libXi.i686
+  - libXmu
+  - libXxf86dga
+  - libX11
+  - libXau
+  - libaio
+  - libaio-devel
+  - libdmx
   - libXtst
   - libXtst.i686
+  - libdmx
+  - make
   - sysstat
   - unixODBC
   - unzip
   - tuned-profiles-oracle
+  - xorg-x11-utils
+  - xorg-x11-xauth
+  - libXv
+  - libXt
+  - libXxf86misc
+  - libXxf86vm
 kernel_params:
 # Shared memory and semaphore
 # look for document 226209.1 in oracle support for details

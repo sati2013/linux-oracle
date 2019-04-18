@@ -1,5 +1,7 @@
 #Playbook for RHEL7 Ansible CSL
 #
+- name: set hostname
+  hostname: name={{ host_name }}
 - name: Install required libraries
   yum: name={{ item }} state=present
   with_items: "{{ packages_list }}"

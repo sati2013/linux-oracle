@@ -1,3 +1,4 @@
+host_name: db-oracle-node1.lab
 oracle_user: oracle
 oracle_install_group: oinstall
 extra_groups:
